@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog template</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="icon" href="data:image/png;base64,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" type="image/gif" sizes="16x16">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        /* li{
+            list-style-type: none;
+            display: inline-block;
+            margin-left: 42px;
+        } */
+        @media only screen and (max-width: 768px){
+            .content{
+                padding: 0 !important;
+            }
+
+            .prod{
+                font-size: 45px !important;
+                margin-top: -1.5rem !important;
+            }
+            .over{
+                width: 100% !important;
+            }
+            .mayank{
+                font-size: 18px !important;
+                margin-top: -15px;
+            }
+            .shubham{
+                margin-bottom: -30px;
+            }
+            .scrollmenu{
+                margin-left: -18px !important;
+            }
+        }
+        .blog-header{
+            margin-bottom: -1.5rem;
+        }
+        
+        .scrollmenu {
+            
+            overflow: auto;
+            white-space: nowrap;
+
+        }
+        .scrollmenu a {
+            display: inline-block;
+            color: grey;
+            text-align: center;
+            padding: 19px;
+            text-decoration: none;
+            margin-top: -2.5rem;
+        }
+
+        .scrollmenu a:hover {
+            text-decoration: underline;
+        }
+
+        .content{
+            background-color: #343a40;
+            color: white;
+            padding-left: 2rem;
+            border-radius: 0.5rem !important;
+        }
+        .topc{
+            margin-top: -1rem;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <div class="container topc">
+        <header class="blog-header py-3">
+            <div class="row justify-content-between align-items-center flex-nowrap">
+                <div class="col-lg-4 pt-1 col-sm-4">
+                    <a class="text-muted" href="#">Subscribe</a>
+                </div>
+                <div class="col-lg-4 text-center col-sm-4">
+                      <h3 style="font-weight: 700; font-size: 2.4rem; color: black;font-family: 'Times New Roman', Times, serif; ">Large</h3>
+                </div>
+                <div class="col-lg-4 text-right col-sm-4 change" style="margin-left: -0.05rem;">
+                    <i class="fa fa-search " style="color: grey; margin-left: -2rem;" ></i> 
+                    <button class="btn  btn-sm btn-outline-secondary" >Sign up</button>   
+                </div>
+            </div>
+            <hr style="margin-top: 2px;">
+        </header>
+
+        <div class="scrollmenu">
+            <a href="#world">World</a>
+            <a href="#u.s">U.S</a>
+            <a href="#technology">Technology</a>
+            <a href="#design">Design</a>
+            <a href="#culture">Culture</a>
+            <a href="#business">Business</a>
+            <a href="#politics">Politics</a>  
+            <a href="#opinion">Opinion</a>
+            <a href="#science">Science</a>
+            <a href="#health">Health</a>
+            <a href="#style">Style</a>
+            <a href="#travel">Travel</a>
+        </div>
+
+
+        <div class="container content">
+            <div class="col-lg-6 col-sm-12 ">
+                <br> <br>
+                <h1 class="prod" style="font-style: italic;font-weight: 600;font-size: 52px; font-family: 'Times New Roman', Times, serif;">Title of a longer featured blog post</h1>
+                <br>
+                <p class="mayank" style="font-size: larger;">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+                
+                <h5 class="shubham"><a style="color: white;font-weight: bold;" href="#reading">Continue reading...</a></h5>
+                <br> <br>
+            </div>
+            <div class="col-lg-6"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <div class="card"  >
+                    <div class="card-body over" style="width: 60%;">
+                      <h6 style="color: blue;font-weight: bold;" class="card-title">World</h6>
+                      <h2><a style="color: black;font-size: 2rem; font-family: 'Times New Roman', Times, serif; font-weight: bold;" href="#">Featured post</a></h2>
+                      <h6 class="card-subtitle mb-2 text-muted">Nov 12</h6>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                      <h6><a href="#">Continue reading</a></h6>
+                    </div>   
+                    <!-- <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Hello"> -->
+                </div>
+            <br>  
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="card" >
+                    <div class="card-body over" style="width: 60%;">
+                      <h6 style="color: green; font-weight: bold;" class="card-title">Design</h6>
+                      <h2 ><a style="color: black; font-size: 2rem;font-family: 'Times New Roman', Times, serif; font-weight: bold;" href="#">Post tittle</a></h2>
+                      <h6 class="card-subtitle mb-2 text-muted">Nov 11</h6>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                      <h6><a href="#">Continue reading</a></h6>
+                    </div>
+                </div>
+                <!-- <img style="background-color: grey; width: 14rem;height: 14rem;" src="bvhs" class="rounded mx-auto d-block text-center" alt=""> -->
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-8 col-sm-12">
+                <h2 style="font-style: oblique;font-weight: 600;font-family: 'Times New Roman', Times, serif;">From the Firehose</h2>
+                <hr>
+                <h2 style="font-size: 3rem;font-family: 'Times New Roman', Times, serif;font-weight: bold;margin-bottom: 2px;">Sample blog post</h2>
+                <p>January 1, 2014 by <a href="#">Mark</a></p>
+                <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
+                <hr>
+                <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+                <p>Curabitur blandit tempus porttitor. <b>Nullam quis risus eget urna mollis</b> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p>Etiam porta <i>sem malesuada magna</i> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 2.5rem; font-weight: bold;">Heading</h1>
+                <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                <h3 style="font-family: 'Times New Roman', Times, serif; font-size: 2rem; font-weight: bold;">Sub-heading</h3>
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    <br> 
+                    <p style="font-family: monospace;">Example code block</p>
+                    
+                    <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+                </p>
+                <h4 style="font-family: 'Times New Roman', Times, serif; font-size: 2rem; font-weight: bold;">Sub-heading</h4>
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <ul>
+                    <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                    <li>Donec id elit non mi porta gravida at eget metus.</li>
+                    <li>Nulla vitae elit libero, a pharetra augue.</li>
+                </ul>
+                <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+                <ol>
+                    <li>Vestibulum id ligula porta felis euismod semper.</li>
+                    <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+                    <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+                </ol>
+                <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+                <br>
+                <br>
+                <h3 style="font-size: 3rem;font-family: 'Times New Roman', Times, serif;font-weight: bold;margin-bottom: 2px;">Another blog post</h3>
+                <p>December 23, 2013 by <a href="#">Jacob</a></p>
+                <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+                <p>Curabitur blandit tempus porttitor. <b>Nullam quis risus eget urna mollis</b> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p>Etiam porta <i>sem malesuada magna</i> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                <br> <br>
+                <h3 style="font-size: 3rem;font-family: 'Times New Roman', Times, serif;font-weight: bold;margin-bottom: 2px;">New feature</h3>
+                <p>December 14, 2013 by <a href="#">Chris</a></p>
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <ul>
+                    <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                    <li>Donec id elit non mi porta gravida at eget metus.</li>
+                    <li>Nulla vitae elit libero, a pharetra augue.</li>
+                </ul>
+                <p>Etiam porta <i>sem malesuada magna</i> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+                <br> <br>
+                <nav class="blog-pagination" style="margin-bottom: 4rem;">
+                    <button style="border-radius: 2rem;" class="btn btn-outline-primary">Older</button>
+                    <button style="border-radius: 2rem;" class="btn btn-outline-secondary disabled">Newer</button>
+                </nav>
+            
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="card" style="background-color: #f8f9fa;">
+                    <div class="card-body" style="margin-bottom: -1.5rem;">
+                        <h4 style="font-style: italic;font-family: 'Times New Roman', Times, serif;font-weight: bolder;">About</h4>
+                        <p>Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                    </div>
+                </div>
+                <br>
+                <h3 style="font-style: oblique;font-family: 'Times New Roman', Times, serif;font-weight: bolder;margin-left: 10px;">Archives</h3>
+                <ul class="draw" style="list-style-type: none; margin-left: -2rem;">
+                    <li><a href="#">March 2014</a></li>
+                    <li><a href="#">February 2014</a></li>
+                    <li><a href="#">January 2014</a></li>
+                    <li><a href="#">December 2013</a></li>
+                    <li><a href="#">November 2013</a></li>
+                    <li><a href="#">October 2013</a></li>
+                    <li><a href="#">September 2013</a></li>
+                    <li><a href="#">August 2013</a></li>
+                    <li><a href="#">July 2013</a></li>
+                    <li><a href="#">June 2013</a></li>
+                    <li><a href="#">May 2013</a></li>
+                    <li><a href="#">April 2013</a></li>
+                </ul>
+                <br>
+                <h3 style="font-style: oblique;font-family: 'Times New Roman', Times, serif;font-weight: bolder;margin-left: 10px;">Elsewhere</h3>
+                <ul style="list-style-type: none;margin-left: -2rem;">
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="background-color: #f8f9fa; ;">
+        <div class="card-body text-center">
+            <br>
+            <p>Blog template built for <a href="#">Bootstrap</a> by <a href="#">@mdo</a>.</p>
+            <a href="#back_to_top">Back to top</a>
+            <br> <br>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
